@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-surface-50 text-ink-900 font-sans antialiased; }
+h1, h2, h3, .font-display { font-family: 'Fraunces', Georgia, serif; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { @apply bg-ink-800/15 rounded-full; }
+
+.card { @apply bg-white rounded-2xl border border-ink-900/5 shadow-card; }
+.container-app { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+.btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand-600 text-white px-4 py-2.5 text-sm font-semibold hover:bg-brand-700 transition-colors; }
+.btn-secondary { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-white border border-ink-900/10 text-ink-900 px-4 py-2.5 text-sm font-semibold hover:bg-surface-100 transition-colors; }
+.btn-ghost { @apply inline-flex items-center gap-1.5 text-brand-600 text-sm font-semibold hover:text-brand-700; }
+.chip { @apply inline-flex items-center rounded-full bg-brand-50 text-brand-700 text-xs font-semibold px-2.5 py-1; }
+.input { @apply w-full rounded-xl border border-ink-900/10 px-3.5 py-2.5 text-sm text-ink-900 placeholder:text-ink-700/40 focus:outline-none focus:ring-2 focus:ring-brand-500/40 focus:border-brand-500; }
